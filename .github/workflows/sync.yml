@@ -5,6 +5,7 @@ on:
     - cron: "0 0 * * *"  # Esegui ogni giorno a mezzanotte (UTC)
   repository_dispatch:
     types: [sync-opl-fork]
+  workflow_dispatch:  # Add this line to enable manual triggering
 
 jobs:
   sync:
